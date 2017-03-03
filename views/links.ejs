@@ -1,0 +1,39 @@
+<p> Create Your Portfolio </p>
+<br>
+<br>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>upload</title>
+</head>
+<body>
+  
+  	<form method= "POST" action="/login/create/links">  
+		
+		<br>
+		<label>Please Re-enter your username</label><br>
+		<input type="text" name="username">
+		<br>
+		<label>Submit your links</label><br><br>
+        
+				<input type="text" name="links">
+
+        		<br><br><br>
+	<input type="submit" value="submit" name="ll">
+		<br>
+		
+		<br><br>
+        
+
+
+	</form>
+	<% if(errors){ %>
+	<ul>
+	<% errors.forEach(function(error){ %>
+	<li><%= error.msg %></li>
+	<% }) %>
+	</ul>
+	<% } %>
+
+</body>
+</html>

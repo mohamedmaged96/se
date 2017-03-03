@@ -1,0 +1,32 @@
+<header>
+<title<HOME PAGE </title>
+</header>
+<h1>Welcome</h1>
+<% if(errors){ %>
+	<ul>
+	<% errors.forEach(function(error){ %>
+	<li><%= error.msg %></li>
+	<% }) %>
+	</ul>
+	<% } %>
+	<form method= "POST" action="/login">  
+		
+	<input type="submit" value="Login">		<br><br>
+
+	</form>
+	
+	<form method= "POST" action="/register">  
+		
+	<input type="submit" value="register">		<br><br>
+
+	</form>
+
+	<form method= "Post" action="/viewing">  
+		
+	<input type="submit" value="View portfolios">		<br><br>
+
+	</form>
+
+<footer>
+	
+</footer>

@@ -1,0 +1,36 @@
+<header>
+<title<LOGIN PAGE </title>
+</header>
+
+	<form method= "POST" action="/login">  
+		<label>username</label><br>
+		<input type="text" name="username">
+		<br>
+		<label>password</label><br>
+		<input type="text" name="password">
+		<br>
+		
+		<br><br>
+
+		<input type="submit" value="Login">
+
+	</form>
+	<h1>Log in</h1>
+<% if(errors){ %>
+	<ul>
+	<% errors.forEach(function(error){ %>
+	<li><%= error.msg %></li>
+	<% }) %>
+	</ul>
+	<% } %>
+
+	<% if (!errors){ %>
+	<ul>
+	<li><%= 'You are registered and can now login!!' %></li>
+		</ul>
+	<% } %>
+
+
+<footer>
+	
+</footer>
